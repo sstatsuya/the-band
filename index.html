@@ -4,227 +4,231 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Band</title>
-    <link rel="icon" type="image/png" href="./assets/img/Logo/logo.png"/>
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel='shortcut icon' type='image/x-icon' href='./assets/img/Logo/logo.png' />
     <link rel="stylesheet" href="./assets/font/css/all.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/css.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>The band</title>
 </head>
 <body>
-    <div id="app">
-        <!-- Header -->
-        <div id="header">
-            <!-- Navigation -->
-            <ul id="nav">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#the-band">Band</a>
-                </li>
-                <li>
-                    <a href="#tour-dates">Tour</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-                <li>
-                    <a href="#">
-                        More
-                        <i class="icon-down fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <ul id="nav-more">
-                        <li><a href="#">Merchandise</a></li>
-                        <li><a href="#">Extras</a></li>
-                        <li><a href="#">Media</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- End Navigation -->
-
-            <!-- Search -->
-            <div id="search">
+    <!-- End overlay -->
+    <!-- Begin header -->
+    <div id="header">
+        <!-- Begin navgation -->
+        <ul id="nav" class="close">
+            <!-- Begin overlay -->
+            <div class="overlay" hidden></div>
+            <!-- End mobile nav bar -->
+            <span class="icon-close">&times</span>
+            <li class="nav-content">
+                <a href="#">Home</a>
+            </li>
+            <li class="nav-content">
+                <a href="#band">Band</a>
+            </li>
+            <li class="nav-content">
+                <a href="#tour">Tour</a>
+            </li>
+            <li class="nav-content">
+                <a href="#contact">Contact</a>
+            </li>
+            <li class="nav-content drop-sub-nav">
+                <a href="#">
+                    More
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <ul class="sub-nav">
+                    <li class="sub-nav-content"><a href="#">Merchandise</a></li>
+                    <li class="sub-nav-content"><a href="#">Extras</a></li>
+                    <li class="sub-nav-content"><a href="#">Media</a></li>
+                </ul>
+            </li>
+            <div class="clear"></div>
+        </ul>
+        <!-- End navigation -->
+        <i class="icon-bar fa fa-bars" aria-hidden="true"></i>
+        <!-- Begin search -->
+            <div class="search">
                 <i class="icon-search fa fa-search" aria-hidden="true"></i>
             </div>
+        <!-- End search -->
+    </div>
+    <!-- End header -->
+
+    <!-- Begin slider -->
+    <div id="slider">
+        <div class="slider-content">
+            <h1>Chicago</h1>
+            <p>Thank you, Chicago - A night we won't forget.</p>
         </div>
-        <!-- End Header -->
-        <div id="slider">
-            <div id="slider-text">
-                <h2 id="slider-text-heading">Chicago</h2>
-                <h2 id="slider-text-content">Thank you, Chicago - A night we won't forget.</h2>
-            </div>
-        </div>
-        <!-- Content -->
-        <div id="content">
-            <!-- The Band -->
-            <div id="the-band" class="content-section">
-                <h2 class="content-section-heading">The band</h2>
-                <p class="content-section-sub-heading">We love music</p>
-                <p id="about-band">
-                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <div id="band-member" class="row">
-                    <div class="member-info col col-3 text-center">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/Band-Member/bandmember.jpg" alt="Member" class="member-img">
+        
+    </div>
+    <!-- End slider -->
+
+    <!-- Begin content -->
+        <!-- Begin The band -->
+        <div id="band" class="section">
+            <div class="section-content">
+                <h1 class="content-title">The band</h1>
+                <p class="content-note">We love music</p>
+                <p class="content-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="grid content-member">
+                    <div class="row">
+                        <div class="col xl-4 l-4 m-6 c-12 member">
+                            <h2>Name</h2>
+                            <img src="./assets/img/Band-Member/bandmember.jpg" alt="member">
+                        </div>
+                        <div class="col xl-4 l-4 m-6 c-12 member">
+                            <h2>Name</h2>
+                            <img src="./assets/img/Band-Member/bandmember.jpg" alt="member">
+                        </div>
+                        <div class="col xl-4 l-4 m-6 c-12 member">
+                            <h2>Name</h2>
+                            <img src="./assets/img/Band-Member/bandmember.jpg" alt="member">
+                        </div>
                     </div>
-                    <div class="member-info col col-3 text-center">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/Band-Member/bandmember.jpg" alt="Member" class="member-img">
-                    </div>
-                    <div class="member-info col col-3 text-center">
-                        <p class="member-name">Name</p>
-                        <img src="./assets/img/Band-Member/bandmember.jpg" alt="Member" class="member-img">
-                    </div>
-                    <div class="clear"></div>
                 </div>
             </div>
-            <!-- End The Band -->
+        </div>
+        <!-- End The band -->
 
-            <!-- Tour Dates -->
-            <div id="tour-dates" class="white-text">
-                <div class="content-section">
-                    <h2 class="content-section-heading">Tour Dates</h2>
-                    <p class="content-section-sub-heading">Remember to book your tickets!</p>
-                    <ul class="ticket">
-                        <li>
-                            September
-                            <span class="sold-out">Sold out</span>
-                        </li>
-                        <li>
-                            October
-                            <span class="sold-out">Sold out</span>
-                        </li>
-                        <li>
-                            November
-                            <span class="ticket-quantity">3</span>
-                        </li>
-                    </ul>
-                    <!-- Place -->
-                    <div class="place-list row">
-                        <div class="place col col-3">
-                            <img src="./assets/img/Band-Place/newyork.jpg" alt="place" class="place-img">
-                            <div class="place-body">
-                                <div class="place-where">New York</div>
-                                <div class="place-time">Fri 27 Nov 2016</div>
-                                <div class="place-info">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <div class="btn-buy js-btn-buy">Buy Tickets</div>
-                            </div>
-                        </div>
-                        <div class="place col col-3">
-                            <img src="./assets/img/Band-Place/paris.jpg" alt="place" class="place-img">
-                            <div class="place-body">
-                                <div class="place-where">Paris</div>
-                                <div class="place-time">Sat 28 Nov 2016</div>
-                                <div class="place-info">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <div class="btn-buy js-btn-buy">Buy Tickets</div>
-                            </div>
-                        </div>
-                        <div class="place col col-3">
-                            <img src="./assets/img/Band-Place/sanfran.jpg" alt="place" class="place-img">
-                            <div class="place-body">
-                                <div class="place-where">San Francisco</div>
-                                <div class="place-time">Sun 29 Nov 2016</div>
-                                <div class="place-info">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
-                                <div class="btn-buy js-btn-buy">Buy Tickets</div>
-                            </div>
-                        </div>
+        <!-- Begin Tour Dates -->
+        <div id="tour" class="section" id="tour-date" >
+            <div class="section-content">
+                <h1 class="content-title">Tour Dates</h1>
+                <p class="content-note">Remember to book your tickets!</p>
+
+                <!-- Begin ticket time -->
+                <div class="ticket-time">
+                    <div class="ticket-time-content">
+                        September
+                        <span class="sold-out">Sold out</span>
+                    </div>
+                    <div class="ticket-time-content">
+                        October
+                        <span class="sold-out">Sold out</span>
+                    </div>
+                    <div class="ticket-time-content">
+                        November
+                        <span class="ticket-quantity">3</span>
                         <div class="clear"></div>
                     </div>
                 </div>
-            </div>
-            <!-- End Tour Dates -->
-
-            <!-- Contact -->
-            <div id="contact" class="content-section">
-                <h2 class="content-section-heading">Contact</h2>
-                <p class="content-section-sub-heading">Fan? Drop a note!</p>
-                <div class="row contact">
-                    <div class="col col-2">
-                        <p class="contact-info">
-                            <i class="icon-contact fa fa-map-marker" aria-hidden="true"></i>
-                            Chicago, US
-                        </p>
-                        <p class="contact-info">
-                            <i class="icon-contact fa fa-mobile" aria-hidden="true"></i>
-                            Phone: +00 151515
-                        </p>
-                        <p class="contact-info">
-                            <i class="icon-contact fa fa-envelope" aria-hidden="true"></i>
-                            Email: mail@mail.com
-                        </p>
+                <!-- End ticket time -->
+            
+                <!-- Begin place -->
+                <div class="grid place">
+                    <div class="row">
+                        <div class="col xl-4 l-4 m-6 c-12 place-content">
+                            <img src="./assets/img/Band-Place/newyork.jpg" alt="place">
+                            <div class="place-info">
+                                <p class="place-name">New York</p>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a class="btn-buy-ticket" href="#">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="col xl-4 l-4 m-6 c-12 place-content">
+                            <img src="./assets/img/Band-Place/paris.jpg" alt="place">
+                            <div class="place-info">
+                                <p class="place-name">Paris</p>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a class="btn-buy-ticket" href="#">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="col xl-4 l-4 m-6 c-12 place-content">
+                            <img src="./assets/img/Band-Place/sanfran.jpg" alt="place">
+                            <div class="place-info">
+                                <p class="place-name">San Francisco</p>
+                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="place-detail">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a class="btn-buy-ticket" href="#">Buy Tickets</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col col-2">
-                        <form action="#" class="contact-form form-control">
+                </div>
+                <!-- End place -->
+            </div>
+        </div>
+        <!-- End Tour Dates-->
+
+        <!-- Begin Contact -->
+        <div id="contact" class="section">
+            <div class="section-content">
+                <h1 class="content-title">Contact</h1>
+                <p class="content-note">Fan? Drop a note!</p>
+                <div class="grid">
+                    <div class="row contact-content">
+                        <div class="col xl-6 l-4 l-o-2 m-10 m-o-1 c-10 c-o-1 contact-col">
+                            <p class="contact-place">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                Chicago, US</p>
+                            <p class="contact-phone">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                Phone: +00 151515
+                            </p>
+                            <p class="contact-email">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                Email: mail@mail.com
+                            </p>
+                        </div>
+                        <div class="col xl-6 l-4 m-10 m-o-1 c-10 c-o-1 contact-col">
                             <div class="row">
-                                <div class="col col-2">
-                                    <input type="text" class="form-control contact-input" required placeholder="Name">
+                                <div class="col xl-6 l-6 m-6 c-6 contact-input tam">
+                                    <input type="text" name="" placeholder="Name">
                                 </div>
-                                <div class="col col-2">
-                                    <input type="email" class="form-control contact-input" required placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="row mt-8">
-                                <div class="col col-full">
-                                    <input type="text" class="form-control contact-input" required placeholder="Message">
+                                <div class="col xl-6 l-6 m-6 c-6 contact-input tam">
+                                    <input type="text" name="" placeholder="Email">
                                 </div>
                             </div>
-                            <button type="submit" class="btn-send-contact mt-16">Send</button>
-                        </form>
+                            <div class="row">
+                                <div class="col xl-12 contact-input contact-msg tam">
+                                    <input type="text" name="" placeholder="Message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col xl-12 contact-send">
+                                    <a href="#">Send</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- End Contact -->
-
-            <!-- Map Section-->
-            <img src="./assets/img/Band-Location/map.jpg" alt="Map" class="map-section">
         </div>
-        <!-- End Content -->
+        <!-- End The Contact -->
 
-        <!-- Footer -->
-        <div id="footer">
-            <p class="icon-footer">
-                <i class="fa fa-facebook-official"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-snapchat-square" aria-hidden="true"></i>
-                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </p>
-            <p class="copyright">Powered by <a href="#">w3.css</a></p>
-        </div>
-        <!-- End Footer -->
+        <!-- Begin location -->
+        <div class="location"></div>
+        <!-- End location -->
+    <!-- End content -->
 
-        <!-- Modal -->
-        <div class="modal js-modal">
-            <div class="modal-container js-modal-container">
-                <i class="icon-close js-icon-close fa fa-times" aria-hidden="true"></i>
-                <div class="modal-header">
-                    <h2><i class="fa fa-suitcase" aria-hidden="true"></i> Tickets</h2>
-                </div>
-                <div class="modal-body">
-                    <label for="" class="label-ticket">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        Tickets, $15 per person
-                    </label>
-                    <input type="text" class="input-ticket" id="input-ticket-quantity" placeholder="How many?">
-                    <label for="" class="label-ticket">
-                        <i class="fa fa-user" aria-hidden="true"></i>
-                        Send To
-                    </label>
-                    <input type="text" class="input-ticket" id="input-ticket-user" placeholder="Enter email">
-                    <button id="btn-pay">
-                        Pay
-                        <i class="fa fa-check" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <div class="modal-footer">
-                    <p class="need-help">Need <a href="">help?</a></p>
-                </div>
-            </div>
-        </div>
-        <!-- End Modal -->
+    <!-- Begin footer -->
+    <div id="footer">
+        <a href="#" class="footer-icon">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="footer-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="footer-icon">
+            <i class="fa fa-snapchat" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="footer-icon">
+            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="footer-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="footer-icon">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <p class="copy-right">Power by <a href="#">w3.css</a> + LMT</p>
     </div>
+    <!-- End footer -->
 </body>
 </html>
-<script src="./assets/js/index.js"></script>
+<script src="./assets/js/main.js"></script>
