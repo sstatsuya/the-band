@@ -52,6 +52,8 @@ html{
 }
 
 .nav-content > a{
+    width: 100%;
+    display: block;
     position: relative;
     font-size: 15px;
     text-transform: uppercase;
@@ -143,6 +145,7 @@ html{
 }
 
 .slider-content h1, .slider-content p{
+    text-shadow: 0 0 2px #000;
     padding: 10px 0;
 }
 

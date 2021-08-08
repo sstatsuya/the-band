@@ -1,20 +1,24 @@
 /* PC width >= 1240px */
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 77.5em) {
     
 }
 
 /* Tablet width >= 740px and width < 1240px */
-@media screen and (min-width: 740px) and (max-width: 1239px) {
+@media screen and (min-width: 46.25em) and (max-width: 77.4375em) {
     .section{
         padding: 0 8px;
     }
     .section-content{
         width: 100%;
     }
+    .footer-icon{
+        font-size: 48px;
+        padding: 0 16px;
+    }
 }
 
 /* Mobile < 740px */
-@media screen and (max-width: 739px) {
+@media screen and (max-width: 46.1875em) {
     .section{
         padding: 0 4px;
     }
@@ -46,5 +50,59 @@
     }
     #nav.close, #header .icon-bar.close{
         display: none;
+    }
+
+    .drop-sub-nav:hover .sub-nav {
+        position: relative;
+        margin: 0 -24px 0 -24px;
+        background-color: #3D3C3D;
+    }
+    .sub-nav .sub-nav-content{
+        padding: 10px 60px 10px 44px;
+    }
+    .sub-nav .sub-nav-content a{
+        color: #fff;
+    }
+
+    .member,
+    .place-content{
+        margin-top: 32px;
+    }
+
+    .member img {
+        width: 80%;
+    }
+
+    .contact-col{
+        margin-top: 8px;
+    }
+
+    .contact-place, .contact-phone, .contact-email {   
+        padding: 3px 8px;
+    }
+
+    .btn-buy-ticket{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-input{
+        margin-top: 8px;
+    }
+
+    .contact-send a{
+        width: 100%;
+        text-align: center;
+    }
+    .footer-icon{
+        font-size: 32px;
+        padding: 0 8px;
+    }
+}
+
+/* Mobile and Tablet */
+@media screen and (max-width: 77.4375em) {
+    .btn-buy-ticket{
+        padding: 15px 13px;
     }
 }
